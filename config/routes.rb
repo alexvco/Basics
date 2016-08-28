@@ -1,10 +1,32 @@
 Rails.application.routes.draw do
-  resources :listings
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  # root 'listings#index'
+
+  ########################################################################
+  ########################################################################
+
+  # http_verb 'url', to: 'controller#action', as: 'whatever_(path)'
+
+  # resources :listings
+
+    get '/listings', to: 'listings#index'
+    post 'listings', to: 'listings#create'
+    get '/listings/new', to: 'listings#new', as: :new_listing
+    get 'listings/:id/edit', to: 'listings#edit', as: 'edit_listing'
+    get 'listings/:id', to: 'listings#show', as: 'listing'
+    patch 'listings/:id', to: 'listings#update'
+    put 'listings/:id', to: 'listings#update'
+    delete 'listings/:id', to: 'listings#destroy'
+
+  # get 'exit', to: 'sessions#destroy', as: :logout
+
+  ########################################################################
+  ########################################################################
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
