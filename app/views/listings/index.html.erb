@@ -14,7 +14,7 @@
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
-        <td><%= listing.name %></td>
+        <td><i class="fa fa-user" aria-hidden="true"></i><%= listing.name %></td>
         <td><%= listing.desc %></td>
         <td><%= link_to 'Show', listing %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
