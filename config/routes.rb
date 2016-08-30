@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :alls
   resources :posts
   resources :tests
   resources :buildings

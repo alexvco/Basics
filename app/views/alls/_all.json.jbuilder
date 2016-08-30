@@ -1,0 +1,2 @@
+json.extract! all, :id, :one, :two, :three, :four, :five, :six, :seven, :listing_id, :nine, :ten, :eleven, :twelve, :thirteen, :fourteen, :fifteen, :sixteen, :seventeen, :eighteen, :nineteen, :created_at, :updated_at
+json.url all_url(all, format: :json)

@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Alls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>One</th>
+      <th>Two</th>
+      <th>Three</th>
+      <th>Four</th>
+      <th>Five</th>
+      <th>Six</th>
+      <th>Seven</th>
+      <th>Listing</th>
+      <th>Nine</th>
+      <th>Ten</th>
+      <th>Eleven</th>
+      <th>Twelve</th>
+      <th>Thirteen</th>
+      <th>Fourteen</th>
+      <th>Fifteen</th>
+      <th>Sixteen</th>
+      <th>Seventeen</th>
+      <th>Eighteen</th>
+      <th>Nineteen</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alls.each do |all| %>
+      <tr>
+        <td><%= all.one %></td>
+        <td><%= all.two %></td>
+        <td><%= all.three %></td>
+        <td><%= all.four %></td>
+        <td><%= all.five %></td>
+        <td><%= all.six %></td>
+        <td><%= all.seven %></td>
+        <td><%= all.listing %></td>
+        <td><%= all.nine %></td>
+        <td><%= all.ten %></td>
+        <td><%= all.eleven %></td>
+        <td><%= all.twelve %></td>
+        <td><%= all.thirteen %></td>
+        <td><%= all.fourteen %></td>
+        <td><%= all.fifteen %></td>
+        <td><%= all.sixteen %></td>
+        <td><%= all.seventeen %></td>
+        <td><%= all.eighteen %></td>
+        <td><%= all.nineteen %></td>
+        <td><%= link_to 'Show', all %></td>
+        <td><%= link_to 'Edit', edit_all_path(all) %></td>
+        <td><%= link_to 'Destroy', all, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New All', new_all_path %>

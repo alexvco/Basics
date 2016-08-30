@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  one: 
+  two: false
+  three: 2016-08-29
+  four: 2016-08-29 21:21:53
+  five: 9.99
+  six: 1.5
+  seven: 1
+  listing_id: 
+  nine: MyString
+  ten: MyText
+  eleven: 2016-08-29 21:21:53
+  twelve: 2016-08-29 21:21:53
+  thirteen: 
+  fourteen: 
+  fifteen: 
+  sixteen: 
+  seventeen: 
+  eighteen: 
+  nineteen: 
+
+two:
+  one: 
+  two: false
+  three: 2016-08-29
+  four: 2016-08-29 21:21:53
+  five: 9.99
+  six: 1.5
+  seven: 1
+  listing_id: 
+  nine: MyString
+  ten: MyText
+  eleven: 2016-08-29 21:21:53
+  twelve: 2016-08-29 21:21:53
+  thirteen: 
+  fourteen: 
+  fifteen: 
+  sixteen: 
+  seventeen: 
+  eighteen: 
+  nineteen: 

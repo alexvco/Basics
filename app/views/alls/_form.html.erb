@@ -1,0 +1,93 @@
+<%= form_for(@all) do |f| %>
+  <% if @all.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@all.errors.count, "error") %> prohibited this all from being saved:</h2>
+
+      <ul>
+      <% @all.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :one %><br>
+    <%= f.text_field :one %>
+  </div>
+  <div class="field">
+    <%= f.label :two %><br>
+    <%= f.check_box :two %>
+  </div>
+  <div class="field">
+    <%= f.label :three %><br>
+    <%= f.date_select :three %>
+  </div>
+  <div class="field">
+    <%= f.label :four %><br>
+    <%= f.datetime_select :four %>
+  </div>
+  <div class="field">
+    <%= f.label :five %><br>
+    <%= f.text_field :five %>
+  </div>
+  <div class="field">
+    <%= f.label :six %><br>
+    <%= f.text_field :six %>
+  </div>
+  <div class="field">
+    <%= f.label :seven %><br>
+    <%= f.number_field :seven %>
+  </div>
+  <div class="field">
+    <%= f.label :listing_id %><br>
+    <%= f.text_field :listing_id %>
+  </div>
+  <div class="field">
+    <%= f.label :nine %><br>
+    <%= f.text_field :nine %>
+  </div>
+  <div class="field">
+    <%= f.label :ten %><br>
+    <%= f.text_area :ten %>
+  </div>
+  <div class="field">
+    <%= f.label :eleven %><br>
+    <%= f.time_select :eleven %>
+  </div>
+  <div class="field">
+    <%= f.label :twelve %><br>
+    <%= f.datetime_select :twelve %>
+  </div>
+  <div class="field">
+    <%= f.label :thirteen %><br>
+    <%= f.text_field :thirteen %>
+  </div>
+  <div class="field">
+    <%= f.label :fourteen %><br>
+    <%= f.text_field :fourteen %>
+  </div>
+  <div class="field">
+    <%= f.label :fifteen %><br>
+    <%= f.text_field :fifteen %>
+  </div>
+  <div class="field">
+    <%= f.label :sixteen %><br>
+    <%= f.text_field :sixteen %>
+  </div>
+  <div class="field">
+    <%= f.label :seventeen %><br>
+    <%= f.text_field :seventeen %>
+  </div>
+  <div class="field">
+    <%= f.label :eighteen %><br>
+    <%= f.text_field :eighteen %>
+  </div>
+  <div class="field">
+    <%= f.label :nineteen %><br>
+    <%= f.text_field :nineteen %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
