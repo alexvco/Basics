@@ -3,6 +3,9 @@ class PropertiesController < ApplicationController
 
   # GET /properties
   # GET /properties.json
+  def bootstrap
+  end
+
   def index
     @properties = Property.all
   end

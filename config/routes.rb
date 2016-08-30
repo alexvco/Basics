@@ -26,6 +26,9 @@ Rails.application.routes.draw do
     put 'listings/:id', to: 'listings#update'
     delete 'listings/:id', to: 'listings#destroy'
 
+    get '/properties/bootstrap', to: 'properties#bootstrap', as: :properties_bootstrap
+
+
   # get 'exit', to: 'sessions#destroy', as: :logout
 
   ########################################################################
