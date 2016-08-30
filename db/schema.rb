@@ -11,10 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160828031553) do
+ActiveRecord::Schema.define(version: 20160830012153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "alls", force: :cascade do |t|
+    t.binary   "one"
+    t.boolean  "two"
+    t.date     "three"
+    t.datetime "four"
+    t.decimal  "five"
+    t.float    "six"
+    t.integer  "seven"
+    t.integer  "listing_id"
+    t.string   "nine"
+    t.text     "ten"
+    t.time     "eleven"
+    t.datetime "twelve"
+    t.json     "fourteen"
+    t.macaddr  "nineteen"
+    t.string   "thirteen"
+    t.string   "fifteen"
+    t.string   "sixteen"
+    t.string   "seventeen"
+    t.string   "eighteen"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "alls", ["listing_id"], name: "index_alls_on_listing_id", using: :btree
 
   create_table "buildings", force: :cascade do |t|
     t.string   "name"
@@ -30,4 +56,15 @@ ActiveRecord::Schema.define(version: 20160828031553) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "testings", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tests", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "alls", "listings"
 end
